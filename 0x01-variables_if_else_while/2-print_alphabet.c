@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints alpha in lower case
- * Return: Always o
+ * Return: always 0
  */
 int main(void)
 {
@@ -9,7 +9,7 @@ int main(void)
 
 	for (lc = 'a' lc <= 'z'; lc++)
 	{
-	putchar(lc);
+		putchar(lc);
 	}
 	putchar('\n');
 	return (0);
