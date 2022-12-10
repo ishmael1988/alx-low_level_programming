@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphatbet in lower case
+ * main - prints the alphabet in lowercase
  * fallowed by a new line, except q and e
  * Return: Always 0
  */
@@ -12,7 +12,7 @@ int main(void)
 	for (la = 'a'; la <= 'z'; la++)
 	{
 		if (la != 'e' && la != 'q')
-			puychar(la);
+			putchar(la);
 	}
 
 	putchar('\n');
