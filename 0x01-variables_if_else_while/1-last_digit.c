@@ -1,31 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
- * main - Eintry
- * Return: alwasy 0
+ * main - Entry
+ * Return: Always 0
  */
 int main(void)
 {
 	int n;
-	int a;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	a = % 10;
+	n = rand() - RAND_MAX  2;
 
-	if (a > 5)
+	if (n < 0)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, a);
+		printf("%d is positive\n", n);
+
 	}
-	else if (a == 0)
+	else if (n == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, a);
+		printf("%d is zero\n", n);
 	}
-	else
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", a);
-	}
+			else if (n < 0)
+			{
+				printf("%d is agative\n");
+			}
+
 	return (0);
 }
+
+
