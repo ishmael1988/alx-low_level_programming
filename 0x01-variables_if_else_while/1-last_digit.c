@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry
+ * main - print if the number positive,nagative or 0
  * Return: Always 0
  */
 int main(void)
@@ -23,7 +23,7 @@ int main(void)
 	}
 			else if (n < 0)
 			{
-				printf("%d is agative\n");
+				printf("%d is agative\n" n);
 			}
 
 	return (0);
