@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints the chessboard.
- * @a: array character
+ * print_diagsums -  prints sums of square array diagonal
  *
- * Return: Always 0.
+ * @a: a pointer
+ * @size: size
  */
 
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i, sumd1 = *a, sumd2 = 0;
 
-	for (i = 0; i < 8; ++i)
+	for (i = 1; i <= size ; ++i)
 	{
-		j = 0;
-		while (j < 8)
-		{
-			putchar(a[i][j]);
-			++j;
-		}
-		putchar('\n');
+		if (i != size)
+			sumd1 += *(a + (i * size) + i);
+
+		sumd2 += *(a + (size - 1) * i);
 	}
+
+	printf("%d, ", sumd1);
+	printf("%d\n", sumd2);
 }
