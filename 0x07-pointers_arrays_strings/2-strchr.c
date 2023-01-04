@@ -1,13 +1,29 @@
 #include "main.h"
 
 /**
- * set_string - sets pointer val to char
+ * _strchr - locates a character in a string.
  *
- * @s: string double pointer
- * @to: string pointer
+ * @s: pointer to string
+ * @c: character to be located
+ *
+ * Return: a pointer to the character
  */
 
-void set_string(char **s, char *to)
+char *_strchr(char *s, char c)
 {
-	*s = to;
+	char *isFound = NULL;
+
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			isFound = s;
+			break;
+		}
+		++s;
+	}
+	if (*s == c)
+		isFound = s;
+
+return (isFound);
 }
