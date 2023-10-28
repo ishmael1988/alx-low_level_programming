@@ -1,0 +1,1 @@
+1:wq0x07. C - Even more pointers, arrays and strings
