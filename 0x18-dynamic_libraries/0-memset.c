@@ -1,21 +1,23 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _memset - fill a block of memory with a specific value
- * @s: starting address of memory to be filled
- * @b: the desired value
- * @n: number of bytes to be changed
+ * _memset - Write a function that fills memory with a constant byte
+ * The _memset() function fills the first n bytes of the memory area pointed to
+ * by s with the constant byte b
  *
- * Return: changed array with new value for n bytes
+ * @s: This is the output and the return
+ * @b: This is the this is the input string
+ * @n: This is the number of bytes
+ *
+ * Return: A pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
+	unsigned int count;
 
-
-	for (; n > 0; i++)
+	for (count = 0; count < n ; count++)
 	{
-		s[i] = b;
-		n--;
+		s[count] = b;
 	}
 	return (s);
 }

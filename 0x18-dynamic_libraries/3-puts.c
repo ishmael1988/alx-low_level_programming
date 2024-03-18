@@ -1,13 +1,20 @@
-#include "main.h"
-void _puts(char *str)
-#include<stdio.h>
+#include "holberton.h"
+
 /**
- * main - Entry point
+ * _puts - Write a function that prints a string, followed by a new line, to
+ * stdout.
  *
- * Return: Always 0 (Success)
+ * @str: This is my input string
+ *
  */
-int main(void)
+
+void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int index;
+
+	for (index = 0; str[index] != '\0'; index++)
+	{
+		_putchar(str[index]);
+	}
+	_putchar('\n');
 }
